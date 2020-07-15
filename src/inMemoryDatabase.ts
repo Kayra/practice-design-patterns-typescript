@@ -1,3 +1,4 @@
+export { };
 
 interface Pokemon {
   id: string;
@@ -17,7 +18,6 @@ interface Database<T extends BaseRecord> {
 class InMemoryDatabase<T extends BaseRecord> implements Database<T> {
 
   private db: Record<string, T> = {};
-
 
   public set(newValue: T): void {
     this.db[newValue.id] = newValue;
