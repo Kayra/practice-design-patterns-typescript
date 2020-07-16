@@ -1,3 +1,4 @@
+export { };
 
 interface Pokemon {
   id: string;
@@ -16,7 +17,7 @@ interface Database<T extends BaseRecord> {
 
 // Factory pattern
 function createDatabase<T extends BaseRecord>() {
-  class InMemoryDatabase {
+  class InMemoryDatabase implements Database<T> {
 
     private db: Record<string, T> = {};
 
