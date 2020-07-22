@@ -9,15 +9,13 @@ Technologies used:
 
 ---
 
-## Set up
+## Set up and Use
 
 In the root directory, install the required packages:
 
 ```bash
 npm i
 ```
-
-## Use
 
 Compile any Typescript changes:
 
@@ -30,4 +28,24 @@ Run a compiled script:
 ```bash
 node src/inMemoryDatabase.js
 ```
+
+## Patterns
+
+The available patterns to see and run are:
+
+* Factory
+* Observer
+* Singleton
+* Strategy
+* Visitor
+
+The `inMemoryDatabase.ts` script is the vanilla implementation for reference.
+
+A convinience command to run a script in one line:
+
+```
+npx tsc && node src/singleton.js
+```
+
+
 
